@@ -1,0 +1,101 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.aboutimg{
+    width:100%;
+    height: 250px;
+}
+.r-advantages-part .r-advantage-main-part {
+    background: #ffffff;
+    padding-bottom: 110px; 
+}
+.r-advantages-part .r-advantage-main-part .advantage-head {
+    text-align: center;
+    text-align: center;
+    padding: 150px 0 50px; 
+}
+.r-advantages-part .r-advantage-main-part .advantage-head span {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1; 
+}
+.r-advantages-part .r-advantage-main-part .advantage-head h2 {
+    font-size: 40px;
+    color: #333;
+    font-weight: 300;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; 
+}
+.r-advantages-part .r-advantage-main-part .advantage-head h2 b {
+    font-weight: 700; 
+}
+.r-advantages-part .r-advantage-main-part .advantage-head::after {
+    font-size: 200px;
+    color: #f1ecd0;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px; }
+.r-advantages-part .r-advantage-main-part .r-advantages-box {
+    margin-bottom: 30px;
+    background: #fff;
+    min-height: 250px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box .icon {
+    font-size: 60px;
+    color: #ffcd00;
+    margin-bottom: 15px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+.r-advantages-part .r-advantage-main-part .r-advantages-box .head {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box .sub-text {
+    font-size: 13px;
+    color: #999;
+    padding-top: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box:hover {
+    box-shadow: 0 0 40px #ccc;
+    background: #ffcd00;
+ }
+.r-advantages-part .r-advantage-main-part .r-advantages-box:hover .icon {
+    color: #fff; 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box:hover .icon img {
+    filter: brightness(0) invert(100%); 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box:hover .head {
+    color: #fff; 
+}
+.r-advantages-part .r-advantage-main-part .r-advantages-box:hover .sub-text {
+    color: #fff;
+}

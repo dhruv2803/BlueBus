@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body class="form-v10">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark text-light" >
+		<a class="navbar-brand"  href="#" style="color:rgb(228,196,15);">BlueBus</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Link</a>
+			</li>
+			<li class="nav-item ">
+				<a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Action</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Another action</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#" style="color:rgb(255, 255, 255);">Something else here</a>
+			</li>
+
+		  </ul>
+
+		</div>
+	  </nav>
+	<div class="page-content" style="	background-image: url('img/temp.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;">
+		<div class="form-v10-content">
+			<form class="form-detail" action="#" method="post" id="myform">
+				<div class="form-left">
+					<h2>General Infomation</h2>
+
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<select name="Gender">
+						    <option value="position">Gender</option>
+						    <option value="director">Male</option>
+						    <option value="manager">Female</option>
+						    <option value="employee">Other</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-row">
+						<input type="" name="age" class="age" id="age" placeholder="Age" required>
+					</div>
+
+					<div class="form-row">
+						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+					</div>
+					<div class="form-row ">
+						<input type="text" name="username" id="username" class="input-text" placeholder="Username" required>
+					</div>
+					<div class="form-row ">
+						<input type="password" name="pwd"  class="input-text" placeholder="Password" required>
+					</div>
+					<div class="form-row ">
+						<input type="password" name="pwd-repeat"  class="input-text" placeholder="Confirm Password" required>
+					</div>
+
+
+				</div>
+				<div class="form-right">
+					<h2>Contact Details</h2>
+					<div class="form-row">
+						<input type="text" name="street" class="street" id="street" placeholder="Street" required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="additional" class="additional" id="additional" placeholder="Additional Information" >
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="pin" class="zip" id="zip" placeholder="Pin Code" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="City"  class="input-text" placeholder="City" required>
+
+						</div>
+					</div>
+					<div class="form-row">
+						<select name="state">
+						    <option value="State">State</option>
+						    <option value="Maharashtra">Maharastra</option>
+						    <option value="Gujarat">Gujarat</option>
+						    <option value="Rajasthan">Rajasthan</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="code" class="code" id="code" placeholder="Code +" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+						</div>
+					</div>
+
+					<div class="form-checkbox">
+						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
+						  	<input type="checkbox" name="checkbox">
+						  	<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="form-row-last">
+						<input type="submit" name="register" class="register" value="Sign Up">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		function isinputnum(evt){
+		  var ch=String.fromCharCode(evt.which);
+		  if(!(/[0-9]/.test(ch))){
+			evt.preventDefault();
+			alert("Please enter only integers.");
+		  }
+		}
+  
+	  </script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
